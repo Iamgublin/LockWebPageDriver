@@ -1,4 +1,4 @@
-// exe.cpp : ¶¨Òå¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞòµÄÈë¿Úµã¡£
+// exe.cpp : å®šä¹‰æ§åˆ¶å°åº”ç”¨ç¨‹åºçš„å…¥å£ç‚¹ã€‚
 //
 
 #include "stdafx.h"
@@ -45,18 +45,7 @@ int main()
 		&sa,
 		&pi);
 	printf("0x%x\n", GetLastError());
-
-	WCHAR *A = TEXT("C:\\Users\\zlzPC\\AppData\\Roaming\\360se6\\Application\\360se.exe");
-	CreateProcess(A,
-		TEXT("open http://www.baidu.com/"),
-		NULL,
-		NULL,
-		FALSE,
-		NULL,
-		NULL,
-		NULL,
-		&sa,
-		&pi);
+	
 	Sleep(INFINITE);
     return 0;
 }
