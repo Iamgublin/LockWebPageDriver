@@ -78,7 +78,7 @@ void Lock360Se(PEPROCESS CurrentProcess, PPS_CREATE_NOTIFY_INFO CreateInfo)
 	{
 		if (Global.UserModeWaitEvent != NULL)
 		{
-			CreateInfo->CreationStatus = STATUS_UNSUCCESSFUL;
+			CreateInfo->CreationStatus = STATUS_ACCESS_DISABLED_NO_SAFER_UI_BY_POLICY;
 			KeSetEvent(Global.UserModeWaitEvent, IO_NO_INCREMENT, FALSE);
 		}
 		Global.WaitFor360Se = FALSE;
